@@ -1,5 +1,10 @@
 use std::fmt;
 
+/**
+ * Chess template. Complementary to task-5.
+ * Author: Viola Söderlund <violaso@kth.se>
+ */
+
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub enum GameState {
     InProgress,
@@ -7,10 +12,15 @@ pub enum GameState {
     GameOver
 }
 
-/* IMPORTANT:
- * - Document well!
- * - Write well structured and clean code!
- */
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub enum Colour {
+    White, Black
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub enum PieceType {
+    King, Queen, Bichop, Knight, Rook, Pawn
+}
 
 pub struct Game {
     /* save board, active colour, ... */
