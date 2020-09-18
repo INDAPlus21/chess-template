@@ -19,7 +19,7 @@ pub enum Colour {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub enum PieceType {
-    King, Queen, Bichop, Knight, Rook, Pawn
+    King, Queen, Bishop, Knight, Rook, Pawn
 }
 
 pub struct Game {
