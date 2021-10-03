@@ -12,12 +12,12 @@ pub enum GameState {
     GameOver
 }
 
-#[derive(Copy, Clone, Debug, PartialEq, Eq)]
+#[derive(Copy, Clone, Debug, PartialEq, Eq, Hash)]
 pub enum Colour {
     White, Black
 }
 
-#[derive(Copy, Clone, Debug, PartialEq, Eq)]
+#[derive(Copy, Clone, Debug, PartialEq, Eq, Hash)]
 pub enum PieceType {
     King, Queen, Bishop, Knight, Rook, Pawn
 }
